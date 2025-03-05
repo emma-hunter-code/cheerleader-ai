@@ -72,6 +72,20 @@ input::placeholder {
   border-left: 3px solid rgba(0, 0, 0, 0.2);
 }
 
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s step-start 0s infinite;
+}
+
 .attribute {
   color: rgba(255, 255, 255, 0.5);
 }
