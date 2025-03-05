@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Cheerleader</title>
   </head>
   <body>
-    <header>
-      <h1>You got this!</h1>
-      <h2>The cheerleader AI for friendly words of encouragement</h2>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic e.g. maths exam, first date"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div id="quote">
-        Whatever the universe has in store for you is going to be amazing.
-      </div>
-    </main>
+    <div class="wrapper">
+      <header>
+        <h1><strong>You got this. </strong>AI for kind words.</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a topic e.g. maths exam, first date"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="quote" id="quote">
+          "Whatever the universe has in store for you is going to be amazing.
+          Your thoughtfulness never fails to amaze me."
+        </div>
+      </main>
+    </div>
     <footer class="signature">
       <p>
         This project was coded by
