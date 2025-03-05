@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +20,7 @@
         <h1><strong>You got this. </strong>AI for kind words.</h1>
       </header>
       <main>
-        <form>
+        <form id="quote-form">
           <input
             type="text"
             placeholder="Enter a topic e.g. maths exam, first date"
@@ -30,10 +31,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quote" id="quote">
-          "Whatever the universe has in store for you is going to be amazing.
-          Your thoughtfulness never fails to amaze me."
-        </div>
+        <div class="quote" id="quote-box"></div>
       </main>
     </div>
     <footer class="signature">
