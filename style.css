@@ -72,6 +72,10 @@ input::placeholder {
   border-left: 3px solid rgba(0, 0, 0, 0.2);
 }
 
+.attribute {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .signature {
   color: rgba(250, 213, 185, 0.8);
   margin: 20px 60px;
